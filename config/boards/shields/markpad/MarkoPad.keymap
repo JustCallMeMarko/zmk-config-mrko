@@ -130,7 +130,7 @@
                 <&macro_tap &kp I>
                 <&macro_tap &kp K>
                 <&macro_tap &kp A>
-                <&macro_tap &kp W>
+                <&macro_tap &kp W>;
         };
     };
     keymap {
