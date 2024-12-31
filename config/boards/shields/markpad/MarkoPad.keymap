@@ -39,8 +39,8 @@
                      &kp B &kp I &kp L &kp Y &kp O &kp N &kp COMMA &kp SPACE
                      &kp I &kp K &kp A &kp W &kp SPACE
                      &kp L &kp A &kp N &kp G &kp SPACE
-                     &kp N &kp G &kp A &kp SPACE
-                     &kp A &kp N &kp G &kp SPACE
+                     &kp N &kp G &kp A &kp SPACE>,
+                <&kp A &kp N &kp G &kp SPACE
                      &kp A &kp K &kp I &kp N &kp G &kp SPACE
                      &kp G &kp U &kp S &kp T &kp O>;
         };
