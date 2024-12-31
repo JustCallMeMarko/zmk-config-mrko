@@ -48,7 +48,7 @@
         default_layer {
             bindings = <
                 &kp A &Paste_Macro &Copy_Macro
-                &kp C &kp D &bootloader
+                &kp C &relapse &bootloader
             >;
         };
     };
