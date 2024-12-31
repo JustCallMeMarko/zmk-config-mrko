@@ -24,16 +24,6 @@
                 <&macro_tap &kp V>,
                 <&macro_release &kp LEFT_CONTROL>;
         };
-        find_btn: find_btn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_press &kp LEFT_CONTROL>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LEFT_CONTROL>;
-        };
         undo_btn: undo_btn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -190,8 +180,8 @@
 
         default_layer {
             bindings = <
-                &copy_btn &paste_btn &find_btn
-                &undo_btn &redo_btn &relapse
+                &copy_btn &paste_btn &relapse
+                &undo_btn &redo_btn &bootloader
             >;
         };
     };
