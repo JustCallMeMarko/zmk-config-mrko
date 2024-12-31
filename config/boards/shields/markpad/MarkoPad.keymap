@@ -34,7 +34,7 @@
                 <&macro_tap &kp F>,
                 <&macro_release &kp LEFT_CONTROL>;
         };
-        undo_btn: redo_btn {
+        undo_btn: undo_btn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
