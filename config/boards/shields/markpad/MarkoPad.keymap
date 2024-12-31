@@ -21,8 +21,8 @@
         relapse: relapse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <250>;
-            tap-ms = <50>;
+            wait-ms = <40>;
+            tap-ms = <20>;
             bindings = 
                 <&kp K &kp U &kp N &kp G &kp SPACE
                    &kp P &kp A &kp N &kp A &kp L &kp A &kp N &kp G &kp I &kp N &kp SPACE
@@ -32,8 +32,8 @@
         relapse2: relapse2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <250>;
-            tap-ms = <50>;
+            wait-ms = <40>;
+            tap-ms = <20>;
             bindings = 
                 <&kp T &kp A &kp T &kp L &kp O &kp N &kp G &kp SPACE
                      &kp B &kp I &kp L &kp Y &kp O &kp N &kp COMMA &kp SPACE
