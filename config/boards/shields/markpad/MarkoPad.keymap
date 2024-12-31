@@ -40,7 +40,8 @@
                     &kp D &kp A &kp L &kp A &kp N &kp G &kp I &kp N  &kp SPACE
                     &kp N &kp G  &kp SPACE>
                 , <&kp P &kp U &kp S &kp O &kp Y  &kp SPACE
-                    &kp I &kp K &kp A &kp W>;
+                    &kp I &kp K &kp A &kp W>
+                ;
         };
     };
     keymap {
