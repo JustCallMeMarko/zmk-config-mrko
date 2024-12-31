@@ -32,15 +32,12 @@
                 , <&kp SPACE &kp M &kp A &kp N
                     &kp N &kp G  &kp SPACE
                     &kp B &kp A &kp W &kp A &kp T  &kp SPACE>
-                    &kp B &kp A &kp W &kp A &kp T  &kp SPACE>
                 , <&kp S &kp A &kp N &kp D &kp A &kp L &kp I  &kp SPACE
                     &kp K &kp A &kp I &kp L &kp A &kp N &kp G &kp A &kp K &kp O &kp Y  &kp SPACE
                     &kp I &kp Y &kp O &kp N &kp G  &kp SPACE
                     &kp I &kp Y &kp O  &kp SPACE>
-                    &kp I &kp Y &kp O  &kp SPACE>
                 , <&kp A &kp N &kp G  &kp SPACE
                     &kp D &kp A &kp L &kp A &kp N &kp G &kp I &kp N  &kp SPACE
-                    &kp N &kp G  &kp SPACE>
                     &kp N &kp G  &kp SPACE>
                 , <&kp P &kp U &kp S &kp O &kp Y  &kp SPACE
                     &kp I &kp K &kp A &kp W>;
