@@ -3,67 +3,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    macros {
-        copy_btn: copy_btn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_press &kp LEFT_CONTROL>,
-                <&macro_tap &kp C>,
-                <&macro_release &kp LEFT_CONTROL>;
-        };
-        paste_btn: paste_btn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_press &kp LEFT_CONTROL>,
-                <&macro_tap &kp V>,
-                <&macro_release &kp LEFT_CONTROL>;
-        };
-        find_btn: find_btn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_press &kp LEFT_CONTROL>,
-                <&macro_tap &kp F>,
-                <&macro_release &kp LEFT_CONTROL>;
-        };
-        undo_btn: redo_btn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_press &kp LEFT_CONTROL>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LEFT_CONTROL>;
-        };
-        redo_btn: redo_btn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_press &kp LEFT_CONTROL>,
-                <&macro_press &kp LEFT_SHIFT>,
-                <&macro_tap &kp Z>,
-                <&macro_release &kp LEFT_CONTROL>;
-                <&macro_release &kp LEFT_SHIFT>;
-        };
-    };
     keymap {
         compatible = "zmk, keymap";
 
         default_layer {
             bindings = <
-                &copy_btn &paste_btn &find_btn
-                &undo_btn &redo_btn &kp SPACE
+                &kp A &kp B &kp C
+                &kp D &kp E &kp SPACE
             >;
         };
     };
