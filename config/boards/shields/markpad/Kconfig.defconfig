@@ -1,4 +1,4 @@
-if SHIELD_MARKPAD
+if SHIELD_MARKOPAD
 
 config ZMK_KEYBOARD_NAME
     default "MarkoPad'
