@@ -30,6 +30,14 @@
         triggers-per-rotation = <20>;
     };    
 
+    &sensors {
+        status = "okay";
+        sensors = <&left_encoder &right_encoder>;
+    };
+    
+    &left_encoder { status = "okay"; };
+    &right_encoder { status = "okay"; };
+
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
