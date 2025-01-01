@@ -40,7 +40,7 @@
                 &kp LC(V)    &kp P       &kp LC(C)
                 &relapse    &bootloader  &relapse2
             >;
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
         abc { // Layer 1
 // ----------------------------------------------
