@@ -39,10 +39,14 @@
                 &relapse &mo 1 &bootloader
             >;
         };
-        bt_layer {
+        abc { // Layer 1
+            display-name = "ABC";
+// ----------------------------------------------
+// |      A      |       B       |       C      |
+// |    &trans   |    &trans     |     &trans   |
             bindings = <
-                    &none &bt BT_CLEAR &none
-                    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+                &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2
+                &kp C    &mo 0    &bt BT_CLEAR
             >;
         };
     };
