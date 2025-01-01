@@ -12,6 +12,7 @@
         b-gpios = <6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
         status = "disabled";
+        wakeup-source;
     };
 
     right_encoder: encoder_right {
