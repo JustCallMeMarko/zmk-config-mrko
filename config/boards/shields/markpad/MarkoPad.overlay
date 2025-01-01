@@ -11,7 +11,7 @@
         a-gpios = <5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
-        status = "disabled";
+        status = "okay";
         wakeup-source;
     };
 
@@ -20,7 +20,7 @@
         a-gpios = <18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
@@ -29,13 +29,6 @@
         triggers-per-rotation = <20>;
     };
 
-    &left_encoder {
-        status = "okay";
-    };
-
-    &right_encoder {
-        status = "okay";
-    };
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
