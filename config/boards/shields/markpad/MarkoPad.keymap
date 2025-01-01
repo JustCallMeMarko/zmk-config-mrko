@@ -36,7 +36,32 @@
                  &kp A &kp K &kp O &kp Y &kp QUOTE &kp D &kp I &kp SPACE
                  &kp P &kp A &kp R &kp A &kp SPACE
                  &kp S &kp A &kp SPACE &kp Y &kp O>;
-
+        };
+        whatif: whatif {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <20>;
+            bindings = 
+                <&kp W &kp H &kp A &kp T &kp SPACE
+                 &kp I &kp F &kp SPACE
+                 &kp B &kp U &kp M &kp A &kp L &kp I &kp K &kp SPACE
+                 &kp A &kp N &kp G &kp SPACE
+                 &kp G &kp R &kp E &kp A &kp T &kp E &kp S &kp T &kp SPACE
+                 &kp W &kp H &kp A &kp T &kp SPACE
+                 &kp I &kp F &kp SPACE
+                 &kp M &kp O>;
+        };
+        aasa: aasa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <20>;
+            bindings = 
+                <&kp A &kp A &kp S &kp A &kp SPACE
+                 &kp H &kp A &kp N &kp G &kp G &kp A &kp T &kp SPACE
+                 &kp K &kp A &kp Y &kp A &kp SPACE
+                 &kp P &kp A>;
         };
     };
 
@@ -61,7 +86,7 @@
             bindings = <
                 &to 0 &kp C_MUTE
                 &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2
-                &kp C_NEXT    &bt BT_CLR_ALL    &kp C_PREV
+                &whatif    &bt BT_CLR_ALL    &aasa
             >;
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
