@@ -12,7 +12,7 @@
         a-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
-        status = "disabled";
+        status = "okay";
     };
 
     right_encoder: encoder_right {
@@ -21,23 +21,16 @@
         a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
-    };    
-
-    &sensors {
         status = "okay";
-        sensors = <&left_encoder &right_encoder>;
-    };
+    };    
     
-    &left_encoder { status = "okay"; };
-    &right_encoder { status = "okay"; };
-
     default_kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "default_kscan";
