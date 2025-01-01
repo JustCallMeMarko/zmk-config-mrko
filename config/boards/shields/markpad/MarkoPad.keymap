@@ -39,7 +39,7 @@
 // |    &mo 1    |   LEFT SHIFT   |    &mo 2    |
             bindings = <
                 &Paste_Macro    &kp P       &Copy_Macro
-                &kp R    &relapse  &to 1
+                &bootloader    &relapse  &mo 1
             >;
         };
         abc { // Layer 1
@@ -47,8 +47,8 @@
 // |      A      |       B       |       C      |
 // |    &trans   |    &trans     |     &trans   |
             bindings = <
-                &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2
-                &trans    &bt BT_CLR_ALL    &to 0
+                &bt BT_SEL 0     &bt BT_SEL 1     &kp M
+                &kp N    &bt BT_CLR_ALL    &trans
             >;
         };
     };
