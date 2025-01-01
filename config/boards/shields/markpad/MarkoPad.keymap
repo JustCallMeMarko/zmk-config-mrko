@@ -29,22 +29,6 @@
                    &kp K &kp O &kp Y &kp SPACE &kp D &kp I &kp SPACE
                    &kp M &kp A &kp R &kp I &kp N &kp I &kp G>;
         };
-        relapse2: relapse2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <20>;
-            bindings = 
-                <&kp T &kp A &kp T &kp L &kp O &kp N &kp G &kp SPACE
-                     &kp B &kp I &kp L &kp Y &kp O &kp N &kp COMMA &kp SPACE
-                     &kp I &kp K &kp A &kp W &kp SPACE
-                     &kp L &kp A &kp N &kp G &kp SPACE
-                     &kp N &kp G &kp A &kp SPACE>,
-                <&kp A &kp N &kp G &kp SPACE
-                     &kp A &kp K &kp I &kp N &kp G &kp SPACE
-                     &kp G &kp U &kp S &kp T &kp O>;
-        };
-
     };
     keymap {
         compatible = "zmk,keymap";
@@ -52,7 +36,13 @@
         default_layer {
             bindings = <
                 &kp A &Paste_Macro &Copy_Macro
-                &relapse &relapse2 &bootloader
+                &relapse &mo 1 &bootloader
+            >;
+        };
+        bt_layer {
+            bindings = <
+                    &none &bt BT_CLEAR &none
+                    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
             >;
         };
     };
