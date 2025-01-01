@@ -6,7 +6,7 @@
         zmk,matrix_transform = &default_transform;
     };
 
-    left_encoder: encoder_left {
+    encoder1: encoder_1 {
         compatible = "alps,ec11";
         #sensor-binding-cells = <0>;
         a-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -15,7 +15,7 @@
         status = "okay";
     };
 
-    right_encoder: encoder_right {
+    encoder2: encoder_2 {
         compatible = "alps,ec11";
         #sensor-binding-cells = <0>;
         a-gpios = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -26,7 +26,7 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
+        sensors = <&encoder1 &encoder2>;
         triggers-per-rotation = <20>;
         status = "okay";
     };    
