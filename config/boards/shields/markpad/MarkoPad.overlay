@@ -17,7 +17,7 @@
 
     encoder2: encoder_2 {
         compatible = "alps,ec11";
-        #sensor-binding-cells = <0>;
+        #sensor-binding-cells = <1>;
         a-gpios = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
