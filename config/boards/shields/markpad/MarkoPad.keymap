@@ -40,7 +40,7 @@
 // |    &mo 1    |   LEFT SHIFT   |    &mo 2    |
             sensor-bindings = <&left_encoder C_VOL_UP C_VOL_DN &right_encoder PG_UP PG_DN>;
             bindings = <
-                &none &soft_off
+                &kp N1 &kp N2
                 &Paste_Macro    &kp P       &Copy_Macro
                 &bootloader    &relapse  &mo 1
             >;
@@ -51,7 +51,7 @@
 // |    &trans   |    &trans     |     &trans   |
             sensor-bindings = <&left_encoder C_VOL_UP C_VOL_DN &right_encoder PG_UP PG_DN>;
             bindings = <
-                &none P &soft_off
+                &kp N1 &kp N2
                 &bt BT_SEL 0     &bt BT_SEL 1     &kp M
                 &kp N    &bt BT_CLR_ALL    &trans
             >;
