@@ -39,8 +39,8 @@
 // |      Z      |        M       |      K      |
 // |    &mo 1    |   LEFT SHIFT   |    &mo 2    |
             bindings = <
-                &Paste_Macro     &relapse       &Copy_Macro
-                &kp P    &mo 1  &relapse
+                &Paste_Macro    &kp P       &Copy_Macro
+                &mo 2    &relapse  &mo 1
             >;
         };
         abc { // Layer 1
@@ -49,8 +49,18 @@
 // |      A      |       B       |       C      |
 // |    &trans   |    &trans     |     &trans   |
             bindings = <
-                &bt BT_SEL 2    &bt BT_SEL 1      &bt BT_SEL 0 
-                &bt BT_CLEAR    &trans    &bt BT_CLEAR
+                &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2
+                &trans    &bt BT_CLEAR_ALL    &trans
+            >;
+        };
+        xyz { // Layer 2
+            display-name = "XYZ";
+// ----------------------------------------------
+// |        X       |      Y       |      Z     |
+// |   LEFT CTRL    |  LEFT ALT    |   &trans   |
+            bindings = <
+                &kp X        &kp Y       &kp Z
+                &trans    &kp H    &trans
             >;
         };
     };
